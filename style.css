@@ -1,0 +1,134 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para o Map Pool Atual */
+#map-pool {
+    margin-bottom: 30px;
+}
+
+#map-pool ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#map-pool li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* Estilos específicos para a seção de Próximos Jogos */
+#upcoming-matches {
+    margin-bottom: 30px;
+}
+
+/* Estilos para a seção de rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para links do rodapé */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Estilos gerais (mantive os estilos anteriores) */
+
+/* Estilos para a caixa de check box personalizada */
+.map-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.map-checkbox .checkmark {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.map-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #2196F3;
+}
+/* Estilos gerais (mantive os estilos anteriores) */
+
+/* Estilos para a caixa de check box personalizada (mantive os estilos anteriores) */
+
+/* Estilos para o quadro em torno de cada mapa */
+.map-item {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.map-item.correct {
+    border-color: #4CAF50; /* Verde para "correto" */
+}
+
+.map-item.wrong {
+    border-color: #F44336; /* Vermelho para "x" */
+}
+
+.map-item span::after {
+    content: "X"; /* Texto "X" para "wrong" */
+    color: #F44336; /* Cor vermelha para "X" */
+    font-weight: bold;
+}
+
+.map-item.correct span::after {
+    content: "Correto"; /* Texto "Correto" para "correct" */
+    color: #4CAF50; /* Cor verde para "Correto" */
+}
